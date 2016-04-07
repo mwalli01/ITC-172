@@ -1,0 +1,26 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <h1>Birthday Calculator</h1>
+        <asp:Calendar ID="Calendar1" runat="server" BorderColor="#66FF33" OnSelectionChanged="Calendar1_SelectionChanged">
+
+        </asp:Calendar>
+        <p>Enter your name <asp:TextBox ID="TextBox1" runat="server">
+
+                           </asp:TextBox></p>
+            <hr />
+            <asp:Label CssClass="ResultLabel" ID="ResultLabel" runat="server" Text=" "></asp:Label>
+        
+        <asp:Button ID="submit" runat="server" Text="go" OnClick="submit_Click" />
+    </div>
+    </form>
+</body>
+</html>
