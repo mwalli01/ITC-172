@@ -9,9 +9,9 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <p><asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"></asp:DropDownList></p>
-        <br />
-        <p><asp:GridView ID="GridView1" runat="server"></asp:GridView></p>
+        <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="True"></asp:DropDownList>
+        
+        <asp:GridView ID="GridView1" runat="server"></asp:GridView>
     </div>
     </form>
 </body>
