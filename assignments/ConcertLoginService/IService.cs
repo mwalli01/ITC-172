@@ -9,6 +9,8 @@ using System.Text;
 [ServiceContract]
 public interface IConcertLoginService
 {
+    [OperationContract]
+    int FanLogin(string username, string password);
 
     [OperationContract]
     int VenueLogin(string username, string password);
@@ -17,12 +19,23 @@ public interface IConcertLoginService
     int VenueRegistration(VenueInfo r);
 
     [OperationContract]
-    void AddShow(Show k);
+    int FanRegistration(FanInfo n);
+
+    [OperationContract]
+    void AddShow(Show k, ShowDetail p);
 
     [OperationContract]
     void AddArtist(Artist p);
 
-	
+    [OperationContract]
+    int AddFanArtist(int fanKey, string artistName);
+
+    [OperationContract]
+    int RemoveFanArtist(int fanKey, string artistName);
+
+    [OperationContract]
+    List<ShowInfo> GetShowsForFanArtists(int fanKey);
+
 }
 
 
@@ -47,9 +60,36 @@ public class ShowInfo
 
     [DataMember]
     public string ShowTicketInfo { get; set; }
+
+    [DataMember]
+    public TimeSpan ShowTime { get; set; }
 }
 
+[DataContract]
+public class FanInfo
+{
+    [DataMember]
+    public string FanName { get; set; }
 
+    [DataMember]
+    public string FanUserName { get; set; }
+
+    [DataMember]
+    public string FanEmail { get; set; }
+
+    [DataMember]
+    public string FanPassword { get; set; }
+}
+
+[DataContract]
+public class FanFollow
+{
+    [DataMember]
+    public int ArtistKey { get; set; }
+
+    [DataMember]
+    public int FanKey { get; set; }
+}
 
 [DataContract]
 public class VenueInfo
