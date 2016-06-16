@@ -10,7 +10,7 @@
     
     <form id="form1" runat="server">
     <div>
-    <h1>HI THIS IS CONCERT LOGIN SERVICE. ENTER LOG IN. THANKS :))</h1>
+    <h1>HI THIS IS THE VENUE LOGIN SERVICE. ENTER LOG IN. THANKS :))</h1>
     <h3>VVV LOGIN GOES HERE VVVV</h3>
         <p>USERNAME</p><asp:TextBox ID="UserNameTextBox" runat="server"></asp:TextBox>
     <br />
