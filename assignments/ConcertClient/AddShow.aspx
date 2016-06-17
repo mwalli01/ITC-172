@@ -18,7 +18,7 @@
             <h2>Add New artist</h2>
             <asp:TextBox ID="ArtistNameBox" runat="server">Artist Name</asp:TextBox><asp:RequiredFieldValidator ID="ArtistRequiredField" runat="server" ErrorMessage="Artist name required" ControlToValidate="ArtistNameBox"></asp:RequiredFieldValidator><br />
             <asp:TextBox ID="ArtistEmailBox" runat="server">Artist Email</asp:TextBox><asp:RequiredFieldValidator ID="ArtistEmailRequiredfield" runat="server" ErrorMessage="Artist email required" ControlToValidate="ArtistEmailBox"></asp:RequiredFieldValidator><br />
-            <asp:TextBox ID="ArtistWebpageBox" runat="server">Artist Webpage</asp:TextBox><asp:RequiredFieldValidator ID="ArtistWebpageRequiredField" runat="server" ErrorMessage="Artist email required" ControlToValidate="ArtistWebpageBox"></asp:RequiredFieldValidator><br /><br />
+            <asp:TextBox ID="ArtistWebpageBox" runat="server">Artist Webpage</asp:TextBox><asp:RequiredFieldValidator ID="ArtistWebpageRequiredField" runat="server" ErrorMessage="Artist web page required" ControlToValidate="ArtistWebpageBox"></asp:RequiredFieldValidator><br /><br />
             <asp:Button ID="ArtistSubmitButton" runat="server" Text="Submit" OnClick="ArtistSubmitButton_Click" />
         </asp:Panel>
 
