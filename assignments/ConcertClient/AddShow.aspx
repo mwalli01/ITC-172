@@ -36,7 +36,7 @@
                 <asp:RequiredFieldValidator ID="AmPmRequiredFieldValidator3" runat="server" ErrorMessage="Enter AM or PM" ControlToValidate="AmPmBox"></asp:RequiredFieldValidator><br /><br />
             
             <asp:TextBox ID="DateBox" runat="server">Date[mm/dd/yy]</asp:TextBox>
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ErrorMessage="RegularExpressionValidator" ValidationExpression="^([0]?[1-9]|[1][0-2])[./-]([0]?[1-9]|[1|2][0-9]|[3][0|1])[./-]([0-9]{4}|[0-9]{2})$" ControlToValidate="DateBox"></asp:RegularExpressionValidator>    
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ErrorMessage="Valid date required (mm/dd/yy)" ValidationExpression="^([0]?[1-9]|[1][0-2])[./-]([0]?[1-9]|[1|2][0-9]|[3][0|1])[./-]([0-9]{4}|[0-9]{2})$" ControlToValidate="DateBox"></asp:RegularExpressionValidator>    
                 <asp:RequiredFieldValidator ID="DateRequiredFieldValidator4" runat="server" ErrorMessage="Date required" ControlToValidate="DateBox"></asp:RequiredFieldValidator><br /><br />
             
             <asp:TextBox ID="TicketInfoBox" runat="server" Width="200" Height="50">Additional ticket details?</asp:TextBox><br />
